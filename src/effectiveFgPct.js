@@ -12,7 +12,8 @@ var BasketballStats = ( function() {
   };
 })();
 
-if ( typeof module !== 'undefined' ) //module only exists when testing in node/jest.  
+// module.exports is available only when testing in nodejs:
+if ( typeof module !== 'undefined' && typeof module.exports !== 'undefined' )   
 {
     module.exports = BasketballStats;
 }
