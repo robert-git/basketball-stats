@@ -2,7 +2,8 @@
 
 var BasketballStats = ( function() {
   var _ts = function( pts, fga, fta ) {
-    return 0;
+    var tsa = fga + 0.44 * fta;
+    return pts / ( 2 * tsa );
   };
 
   return {
