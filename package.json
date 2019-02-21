@@ -1,7 +1,7 @@
 {
   "name": "basketball-stats",
   "version": "1.0.0",
-  "description": "",
+  "description": "[![Build Status](https://travis-ci.com/robert-git/basketball_stats.svg?token=m3dqpny5hDdnJpQQJwC9&branch=master)](https://travis-ci.com/robert-git/basketball_stats)",
   "main": "index.js",
   "scripts": {
     "test": "jest --coverage --coverageReporters=text-lcov | coveralls"
@@ -12,5 +12,17 @@
   "devDependencies": {
     "coveralls": "^3.0.2",
     "jest": "^24.1.0"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robert-git/basketball-stats.git"
+  },
+  "bugs": {
+    "url": "https://github.com/robert-git/basketball-stats/issues"
+  },
+  "homepage": "https://github.com/robert-git/basketball-stats#readme"
 }
