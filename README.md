@@ -1,4 +1,4 @@
-# calculate basketball stats
+# Calculate basketball stats
 
 [![Build Status](https://travis-ci.com/robert-git/basketball-stats.svg?branch=master)](https://travis-ci.com/robert-git/basketball-stats)
 
