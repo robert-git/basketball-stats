@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --coverage --coverageReporters=text-lcov | coveralls"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "coveralls": "^3.0.2",
     "jest": "^24.1.0"
   }
 }
