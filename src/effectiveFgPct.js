@@ -4,7 +4,7 @@ var BasketballStats = ( function() {
   var _efg = function( fgm, fga, threePtrsMade ) {
     // eFG% definition: https://www.basketball-reference.com/about/glossary.html
 
-    return 0;
+    return ( fgm + 0.5 * threePtrsMade ) / fga;
   };
 
   return {
