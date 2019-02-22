@@ -1,6 +1,7 @@
 "use strict";
 
-var BasketballStats = ( function() {
+var BasketballStats = ( function( BasketballStats ) {
+
   var _ts = function( pts, fga, fta ) {
     // TS% definition: https://www.basketball-reference.com/about/glossary.html
 
@@ -8,10 +9,11 @@ var BasketballStats = ( function() {
     return pts / ( 2 * tsa );
   };
 
-  return {
-    trueShootingPct : _ts
-  };
-})();
+  BasketballStats.trueShootingPct = _ts;
+
+  return BasketballStats;
+  
+})( BasketballStats || {} );
 
 // module.exports is available only when testing in nodejs:
 if ( typeof module !== 'undefined' && typeof module.exports !== 'undefined' ) 
