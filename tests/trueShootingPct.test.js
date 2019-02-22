@@ -13,5 +13,16 @@ test( "Calculating Kyrie's 2017-18 TS%", () => {
   var fta =  261;
   var actualTsPct = Stats.trueShootingPct( pts, fga, fta );
   var expectedTsPct = 0.610;
+  
   expect( actualTsPct ).toBeCloseTo( expectedTsPct, decimalPlacePrecisionAtBkrefDotCom );
+});
+
+test( "When FGA and FTA are both zero, TS% is infinite", () => {
+  // https://www.basketball-reference.com/players/i/irvinky01.html
+  var pts = 1466;
+  var fga =    0;
+  var fta =    0;
+  var actualTsPct = Stats.trueShootingPct( pts, fga, fta );
+  
+  expect( actualTsPct ).toEqual( Infinity );
 });
